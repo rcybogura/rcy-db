@@ -4,13 +4,15 @@ backend:
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
-collections: # A list of collections the CMS should be able to edit
+collections: 
   - name: "rcy"
     label: "RCY"
-    folder: "site/content/rcy" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Name", name: "title", widget: "string"}
+    folder: "site/content/rcy" 
+    create: true
+    slug: "{{title}}" 
+    fields: 
+      - {label: "Volunteer ID", name: "title", widget: "string"}
+      - {label: "Full Name", name: "full_name", widget: "string", required: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
