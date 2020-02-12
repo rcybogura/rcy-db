@@ -11,9 +11,18 @@ collections:
     create: true
     slug: "{{title}}" 
     fields: 
+      #basic details
       - {label: "Volunteer ID", name: "title", widget: "string"}
       - {label: "Full Name", name: "full_name", widget: "string", required: true}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Father's Name", name: "fathers_name", widget: "string", required: true}
+      - {label: "Mother's Name", name: "mothers_name", widget: "string", required: true}
+      - {label: "Permanent Address", name: "perm_add", widget: "string", required: false}
+      - {label: "Present Address", name: "present_add", widget: "string", required: false}
+      - {label: "Date of Birth", name: "date_of_birth", widget: "date", required: false}
+      - {label: "Blood Group", name: "blood_group", widget: "string", required: false}
+      - {label: "Gender", name: "gender", widget: "string", required: true}
+      # # contact information
+      # - {label: "Full Name", name: "full_name", widget: "string", required: true}
+      # - {label: "Full Name", name: "full_name", widget: "string", required: true}
+      # - {label: "Full Name", name: "full_name", widget: "string", required: true}
+      # - {label: "Publish Date", name: "date", widget: "date", format: "MMM Do YY"}
