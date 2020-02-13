@@ -11,8 +11,8 @@ collections:
     create: true
     slug: "{{title}}" 
     fields: 
-      #basic details
       - {label: "Volunteer ID", name: "title", widget: "string"}
+      #SECTION-01: PERSONAL DETAILS
       - {label: "Full Name", name: "full_name", widget: "string", required: true}
       - {label: "Father's Name", name: "fathers_name", widget: "string", required: true}
       - {label: "Mother's Name", name: "mothers_name", widget: "string", required: true}
@@ -20,9 +20,32 @@ collections:
       - {label: "Present Address", name: "present_add", widget: "string", required: false}
       - {label: "Date of Birth", name: "date_of_birth", widget: "date", required: false}
       - {label: "Blood Group", name: "blood_group", widget: "string", required: false}
-      - {label: "Gender", name: "gender", widget: "string", required: true}
-      # # contact information
-      # - {label: "Full Name", name: "full_name", widget: "string", required: true}
-      # - {label: "Full Name", name: "full_name", widget: "string", required: true}
-      # - {label: "Full Name", name: "full_name", widget: "string", required: true}
-      # - {label: "Publish Date", name: "date", widget: "date", format: "MMM Do YY"}
+      - {label: "Gender", name: "gender",  widget: "select", options: ["Male", "Female", "Other"], required: true}
+      # SECTION-02: CONTACT INFORMATION & IDENTIFICATION
+      - {label: "Email Address", name: "email", widget: "string", requires: false}
+      - {label: "Contact Number", name: "contact_no", widget: "number", required: true}
+      - {label: "Birth Reg. Certificate No.", name: "birth_cert", widget: "number", required: false}
+      - {label: "National ID No.", name: "nid_mo", widget: "number", required: false}
+      - {label: "Passport No.", name: "passport_no", widget: "number", required: false}
+      # # SECTION-03: EMERGENCY CONTACT PERSON
+      # - {label: "Person Name", name: "full_name", widget: "string", required: true}
+      # - {label: "Relation", name: "full_name", widget: "string", required: true}
+      # - {label: "Address", name: "full_name", widget: "string", required: true}
+      # - {label: "Contact No.", name: "full_name", widget: "string", required: true}
+      # # SECTION-04: EDUCATION
+      # - {label: "Name of Institute", name: "full_name", widget: "string", required: true}
+      # - {label: "Subject / Dept", name: "full_name", widget: "string", required: true}
+      # - {label: "Class / Year / Semester", name: "full_name", widget: "string", required: true}
+      # - {label: "Roll / ID No.", name: "full_name", widget: "string", required: true}
+      # # SECTION-05: PARTICIPATION
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "Camps Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "International Visit", name: "full_name", widget: "string", required: true}
+      # - {label: "Other Organisation", name: "full_name", widget: "string", required: true}
+      # # SECTION-00: 
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
+      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
