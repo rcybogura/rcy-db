@@ -14,8 +14,8 @@ collections:
       - {label: "Volunteer ID", name: "title", widget: "string"}
       #SECTION-01: PERSONAL DETAILS
       - {label: "Full Name", name: "full_name", widget: "string", required: true}
-      - {label: "Father's Name", name: "fathers_name", widget: "string", required: true}
-      - {label: "Mother's Name", name: "mothers_name", widget: "string", required: true}
+      - {label: "Father's Name", name: "fathers_name", widget: "string", required: false}
+      - {label: "Mother's Name", name: "mothers_name", widget: "string", required: false}
       - {label: "Permanent Address", name: "perm_add", widget: "string", required: false}
       - {label: "Present Address", name: "present_add", widget: "string", required: false}
       - {label: "Date of Birth", name: "date_of_birth", widget: "date", required: false}
