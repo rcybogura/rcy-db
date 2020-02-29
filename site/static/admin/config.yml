@@ -16,7 +16,7 @@ collections:
       - {label: "Full Name", name: "full_name", widget: "string", required: true}
       - {label: "Featured Image", name: "thumbnail", widget: "image",
         media_library: 
-            config:
+            config: 
                   multiple: true}
       - {label: "Father's Name", name: "fathers_name", widget: "string", required: false}
       - {label: "Mother's Name", name: "mothers_name", widget: "string", required: false}
