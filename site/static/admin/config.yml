@@ -33,16 +33,16 @@ collections:
       - {label: "Address", name: "emergency_add", widget: "string", required: false}
       - {label: "Contact No.", name: "emergency_contact_no", widget: "number", required: false}
       # SECTION-04: EDUCATION
-      - {label: "Name of Institute", name: "edu_", widget: "string", required: true}
-      - {label: "Subject / Dept", name: "full_name", widget: "string", required: true}
-      - {label: "Class / Year / Semester", name: "full_name", widget: "string", required: true}
-      - {label: "Roll / ID No.", name: "full_name", widget: "string", required: true}
+      - {label: "Name of Institute", name: "edu_inst", widget: "string", required: false}
+      - {label: "Subject / Dept", name: "edu_dept", widget: "string", required: false}
+      - {label: "Class / Year / Semester", name: "edu_class", widget: "string", required: false}
+      - {label: "Roll / ID No.", name: "edu_roll", widget: "string", required: false}
 
       # # SECTION-05: PARTICIPATION
-      # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
-      # - {label: "Camps Attended", name: "full_name", widget: "string", required: true}
-      # - {label: "International Visit", name: "full_name", widget: "string", required: true}
-      # - {label: "Other Organisation", name: "full_name", widget: "string", required: true}
+      - {label: "Trainings Attended", name: "trainings", widget: "list", allow_add: true, required: false}
+      - {label: "Camps Attended", name: "camps", widget: "string", required: false}
+      - {label: "International Visit", name: "int_visit", widget: "string", required: false}
+      - {label: "Other Organisation", name: "other_orgs", widget: "string", required: false}
       # # SECTION-00: 
       # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
       # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
