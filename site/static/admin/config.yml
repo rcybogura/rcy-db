@@ -14,6 +14,10 @@ collections:
       - {label: "Volunteer ID", name: "title", widget: "string"}
       #SECTION-01: PERSONAL DETAILS
       - {label: "Full Name", name: "full_name", widget: "string", required: true}
+      - {label: "Featured Image", name: "thumbnail", widget: "image",
+        media_library: 
+            config:
+                  multiple: true}
       - {label: "Father's Name", name: "fathers_name", widget: "string", required: false}
       - {label: "Mother's Name", name: "mothers_name", widget: "string", required: false}
       - {label: "Permanent Address", name: "perm_add", widget: "string", required: false}
@@ -22,7 +26,7 @@ collections:
       - {label: "Blood Group", name: "blood_group", widget: "select", options: ["A+", "B+", "AB+", "O+", "A-", "B-", "AB-", "O-"], required: false}
       - {label: "Gender", name: "gender",  widget: "select", options: ["Male", "Female", "Other"], required: true}
       # SECTION-02: CONTACT INFORMATION & IDENTIFICATION
-      - {label: "Email Address", name: "email", widget: "string", requires: true}
+      - {label: "Email Address", name: "email", widget: "string", requires: false}
       - {label: "Contact Number", name: "contact_no", widget: "number", required: true}
       - {label: "Birth Reg. Certificate No.", name: "birth_cert", widget: "number", required: false}
       - {label: "National ID No.", name: "nid_mo", widget: "number", required: false}
