@@ -12,7 +12,7 @@ collections:
     slug: "{{title}}" 
     fields: 
       - {label: "Volunteer ID", name: "title", widget: "string"}
-      #SECTION-01: PERSONAL DETAILS
+      # SECTION-01: PERSONAL DETAILS
       - {label: "Full Name", name: "full_name", widget: "string", required: true}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Father's Name", name: "fathers_name", widget: "string", required: false}
