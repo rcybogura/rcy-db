@@ -26,17 +26,17 @@ collections:
       - {label: "Contact Number", name: "contact_no", widget: "number", required: true}
       - {label: "Birth Reg. Certificate No.", name: "birth_cert", widget: "number", required: false}
       - {label: "National ID No.", name: "nid_mo", widget: "number", required: false}
-      - {label: "Passport No.", name: "passport_no", widget: "number", required: false}
-      # # SECTION-03: EMERGENCY CONTACT PERSON
-      # - {label: "Person Name", name: "full_name", widget: "string", required: true}
-      # - {label: "Relation", name: "full_name", widget: "string", required: true}
-      # - {label: "Address", name: "full_name", widget: "string", required: true}
-      # - {label: "Contact No.", name: "full_name", widget: "string", required: true}
-      # # SECTION-04: EDUCATION
-      # - {label: "Name of Institute", name: "full_name", widget: "string", required: true}
-      # - {label: "Subject / Dept", name: "full_name", widget: "string", required: true}
-      # - {label: "Class / Year / Semester", name: "full_name", widget: "string", required: true}
-      # - {label: "Roll / ID No.", name: "full_name", widget: "string", required: true}
+      - {label: "Passport No.", name: "passport_no", widget: "string", required: false}
+      # SECTION-03: EMERGENCY CONTACT PERSON
+      - {label: "Person Name", name: "emergency_name", widget: "string", required: false}
+      - {label: "Relation", name: "emergency_relation", widget: "string", required: false}
+      - {label: "Address", name: "emergency_add", widget: "string", required: false}
+      - {label: "Contact No.", name: "emergency_contact_no", widget: "number", required: false}
+      # SECTION-04: EDUCATION
+      - {label: "Name of Institute", name: "edu_", widget: "string", required: true}
+      - {label: "Subject / Dept", name: "full_name", widget: "string", required: true}
+      - {label: "Class / Year / Semester", name: "full_name", widget: "string", required: true}
+      - {label: "Roll / ID No.", name: "full_name", widget: "string", required: true}
       # # SECTION-05: PARTICIPATION
       # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
       # - {label: "Camps Attended", name: "full_name", widget: "string", required: true}
