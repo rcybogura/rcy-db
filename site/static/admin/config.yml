@@ -19,7 +19,7 @@ collections:
       - {label: "Permanent Address", name: "perm_add", widget: "string", required: false}
       - {label: "Present Address", name: "present_add", widget: "string", required: false}
       - {label: "Date of Birth", name: "date_of_birth", widget: "date", required: false}
-      - {label: "Blood Group", name: "blood_group", widget: "string", required: false}
+      - {label: "Blood Group", name: "blood_group", widget: "select", options: ["A+", "B+", "AB+", "O+", "A-", "B-", "AB-", "O-"], required: false}
       - {label: "Gender", name: "gender",  widget: "select", options: ["Male", "Female", "Other"], required: true}
       # SECTION-02: CONTACT INFORMATION & IDENTIFICATION
       - {label: "Email Address", name: "email", widget: "string", requires: false}
@@ -39,10 +39,10 @@ collections:
       - {label: "Roll / ID No.", name: "edu_roll", widget: "string", required: false}
 
       # # SECTION-05: PARTICIPATION
-      - {label: "Trainings Attended", name: "trainings", widget: "list",  default: ["news"], required: false}
-      - {label: "Camps Attended", name: "camps", widget: "string", required: false}
-      - {label: "International Visit", name: "int_visit", widget: "string", required: false}
-      - {label: "Other Organisation", name: "other_orgs", widget: "string", required: false}
+      - {label: "Trainings Attended", name: "trainings", widget: "list", required: false}
+      - {label: "Camps Attended", name: "camps", widget: "list", required: false}
+      - {label: "International Visit", name: "int_visit", widget: "list", required: false}
+      - {label: "Other Organisation", name: "other_orgs", widget: "list", required: false}
       # # SECTION-00: 
       # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
       # - {label: "Trainings Attended", name: "full_name", widget: "string", required: true}
