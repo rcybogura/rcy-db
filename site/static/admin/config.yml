@@ -18,7 +18,7 @@ collections:
       - {label: "Mother's Name", name: "mothers_name", widget: "string", required: false}
       - {label: "Permanent Address", name: "perm_add", widget: "string", required: false}
       - {label: "Present Address", name: "present_add", widget: "string", required: false}
-      - {label: "Date of Birth", name: "date_of_birth", widget: "date", required: false}
+      - {label: "Date of Birth", name: "date_of_birth", widget: "date", default: "", format: "DD/MM/YYYY", required: false}
       - {label: "Blood Group", name: "blood_group", widget: "select", options: ["A+", "B+", "AB+", "O+", "A-", "B-", "AB-", "O-"], required: false}
       - {label: "Gender", name: "gender",  widget: "select", options: ["Male", "Female", "Other"], required: true}
       # SECTION-02: CONTACT INFORMATION & IDENTIFICATION
